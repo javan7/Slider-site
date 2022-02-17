@@ -1,6 +1,8 @@
 new Splide(".splide", {
+  type: "loop",
+  speed: (number = 1500),
   autoplay: true,
-  interval: 3000,
+  interval: 1000,
   pagination: false,
   arrows: false,
 }).mount();
