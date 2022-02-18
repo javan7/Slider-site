@@ -80,6 +80,8 @@ body {
   margin: 0 auto;
 }
 
+/* HEADER */
+
 .nav {
   display: flex;
   height: 88px;
@@ -133,9 +135,9 @@ html body .active {
 .first-slider {
   width: 100%;
   height: 387px;
-  margin-bottom: 500px;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 105px;
 }
 
 .splide__slide img {
@@ -164,4 +166,86 @@ html body .active {
 
 .splide__slide6 {
   transform: translateY(-26%);
+}
+
+/* MAiN */
+
+.about {
+  background-color: #f6f6f6;
+  text-align: center;
+  width: 100vw;
+}
+
+.about-block {
+  padding: 120px 0 107px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 485px;
+}
+.about-title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #070707;
+  margin-bottom: 25px;
+}
+.about-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.skills {
+  padding: 91px 0 110px 0;
+}
+.skills-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.skills-subtitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 83px;
+}
+.second-slider {
+  width: 100%;
+}
+
+.skills-block {
+  padding: 0 30px;
+  width: 166px;
+  height: 206px;
+  position: relative;
+}
+
+.skills-img {
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills-block h6 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  text-align: center;
+  padding-top: 114px;
+}
+
+.skills-star {
+  position: absolute;
+  width: 166.46px;
+  height: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
