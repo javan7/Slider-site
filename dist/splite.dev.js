@@ -25,6 +25,11 @@ new Splide(".splide2", {
       perPage: 4,
       direction: "ttb",
       height: "950px"
+    },
+    425: {
+      perPage: 4,
+      direction: "ttb",
+      height: "1000px"
     }
   }
 }).mount();
