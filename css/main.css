@@ -328,6 +328,18 @@ html body .active {
     cursor: pointer;
     overflow: hidden;
   }
+  .reklam .reklam-title {
+    padding-top: 81px;
+    margin-bottom: 64px;
+  }
+
+  .reklam .reklam-img-title {
+    margin-bottom: 77px;
+  }
+
+  .reklam .reklam-img-title:last-child {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -407,4 +419,47 @@ html body .active {
     cursor: pointer;
     overflow: hidden;
   }
+}
+
+.reklam {
+  background-color: #f6f6f6;
+  height: 100%;
+}
+
+.reklam-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  padding-top: 112px;
+  margin-bottom: 47px;
+}
+
+.reklam-img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 44px;
+  opacity: 93%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.reklam-img:hover {
+  transform: scale(103%);
+  opacity: 100%;
+}
+
+.reklam-img-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  cursor: pointer;
+  margin-bottom: 99px;
+}
+
+.reklam-img-title:last-child {
+  padding-bottom: 96px;
 }
