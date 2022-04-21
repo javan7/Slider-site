@@ -340,6 +340,13 @@ html body .active {
   .reklam .reklam-img-title:last-child {
     padding-bottom: 80px;
   }
+
+  .contact .contact-title {
+    margin-top: 45px;
+  }
+  .contact .contact-button {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -462,4 +469,42 @@ html body .active {
 
 .reklam-img-title:last-child {
   padding-bottom: 96px;
+}
+
+.contact {
+  text-align: center;
+}
+.contact-title {
+  margin-top: 114px;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  color: #070707;
+}
+.contact-subtitle {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.contact-button {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 85px;
+}
+.contact-logo {
+  cursor: pointer;
+  margin-right: 60px;
+}
+.contact-logo:last-child {
+  margin-right: 0;
+}
+.contact-text {
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 120px;
 }
