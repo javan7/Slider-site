@@ -87,6 +87,7 @@ body {
   height: 88px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #828282;
 }
 
@@ -177,14 +178,12 @@ html body .active {
 .about {
   background-color: #f6f6f6;
   text-align: center;
-  width: 100vw;
 }
 
 .about-block {
   padding: 120px 0 107px 0;
-  margin: 0 auto;
-  text-align: center;
   width: 485px;
+  margin: 0 auto;
 }
 .about-title {
   font-size: 34px;
@@ -255,6 +254,88 @@ html body .active {
   transform: translateX(-50%);
 }
 
+/* FOOTER */
+.reklam {
+  background-color: #f6f6f6;
+  height: 100%;
+}
+
+.reklam-title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  padding-top: 112px;
+  margin-bottom: 47px;
+}
+
+.reklam-img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 44px;
+  opacity: 93%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.reklam-img:hover {
+  transform: scale(103%);
+  opacity: 100%;
+}
+
+.reklam-img-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  cursor: pointer;
+  margin-bottom: 99px;
+}
+
+.reklam-img-title:last-child {
+  padding-bottom: 96px;
+}
+
+.contact {
+  text-align: center;
+}
+.contact-title {
+  margin-top: 114px;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  color: #070707;
+}
+.contact-subtitle {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.contact-button {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 85px;
+}
+.contact-logo {
+  cursor: pointer;
+  margin-right: 60px;
+}
+.contact-logo:last-child {
+  margin-right: 0;
+}
+.contact-text {
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 120px;
+}
+
 @media (max-width: 425px) {
   .container {
     width: 375px;
@@ -322,14 +403,24 @@ html body .active {
     position: absolute;
     cursor: pointer;
     z-index: 3;
+    transition: 0.1s linear;
   }
-
+  .menu-burger.action {
+    display: block;
+    width: 33px;
+    height: 4px;
+    transform: translateY(200%);
+  }
   .burger-line hr {
     width: 33px;
     height: 4px;
     background: #000;
   }
-
+  .burger-line.action hr {
+    width: 33px;
+    height: 4px;
+    background: #fff;
+  }
   .burger-line hr:before {
     content: "";
     display: block;
@@ -339,6 +430,10 @@ html body .active {
     top: 0;
     position: absolute;
   }
+
+  .burger-line.action hr:before {
+    transform: rotate(45deg);
+  }
   .burger-line hr:after {
     content: "";
     display: block;
@@ -347,6 +442,10 @@ html body .active {
     background: #000000;
     position: absolute;
     bottom: 0;
+  }
+
+  .burger-line.action hr:after {
+    transform: rotate(-45deg);
   }
   .header-info {
     margin-top: 30px;
@@ -555,85 +654,9 @@ html body .active {
     cursor: pointer;
     overflow: hidden;
   }
-}
-/* FOOTER */
-.reklam {
-  background-color: #f6f6f6;
-  height: 100%;
-}
 
-.reklam-title {
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 42px;
-  text-align: center;
-  color: #070707;
-  padding-top: 112px;
-  margin-bottom: 47px;
-}
-
-.reklam-img {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 44px;
-  opacity: 93%;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.reklam-img:hover {
-  transform: scale(103%);
-  opacity: 100%;
-}
-
-.reklam-img-title {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  text-decoration-line: underline;
-  cursor: pointer;
-  margin-bottom: 99px;
-}
-
-.reklam-img-title:last-child {
-  padding-bottom: 96px;
-}
-
-.contact {
-  text-align: center;
-}
-.contact-title {
-  margin-top: 114px;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 42px;
-  color: #070707;
-}
-.contact-subtitle {
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-}
-.contact-button {
-  cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 85px;
-}
-.contact-logo {
-  cursor: pointer;
-  margin-right: 60px;
-}
-.contact-logo:last-child {
-  margin-right: 0;
-}
-.contact-text {
-  margin-top: 45px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #828282;
-  margin-bottom: 120px;
+  .contact-logo {
+    cursor: pointer;
+    margin-right: 25px;
+  }
 }
